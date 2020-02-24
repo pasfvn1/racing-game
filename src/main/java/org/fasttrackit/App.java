@@ -13,6 +13,25 @@ public class App {
         carReference.maxSpeed = 260;
         carReference.mileage = 6.2;
 
+//        carReference.engine = newEngine();
+//        carReference.engine.manufactured = "vw";
+//        carReference.engine.capacity =  2000
+
+      Engine engine1 = new Engine();
+      engine1.manufactured = "vw";
+      engine1.capacity = 2000;
+
+      carReference. engine = engine1;
+      // one objesct with two references
+
+        System.out.println("Engine details :");
+        System.out.println( engine1.capacity);
+        System.out.println(carReference. engine.capacity);
+
+        engine1. capacity = 2100;
+        System.out.println("Update engine details");
+        System.out.println( engine1.capacity);
+        System.out.println(carReference.engine. capacity);
 
         System.out.println("Propertis of " + carReference.name);
         System.out.println("color: " + carReference. color);
