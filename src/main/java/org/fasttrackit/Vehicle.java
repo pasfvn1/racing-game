@@ -42,7 +42,7 @@ public class Vehicle  {
 
     public void decelerate (){
         // TODO: implement this
-        System.out.println( " This is just a demo mathod");
+        System.out.println( " This is just a demo method");
 
     }
 }

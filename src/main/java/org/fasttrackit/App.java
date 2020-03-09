@@ -13,6 +13,8 @@ public class App {
         carReference.maxSpeed = 260;
         carReference.mileage = 6.2;
         carReference. fuelLevel = 100;
+        carReference. damaged = true;
+
 
 //        carReference.engine = newEngine();
 //        carReference.engine.manufactured = "vw";
@@ -27,6 +29,11 @@ public class App {
 
         double curentDistance = carReference.accelerate(60, 1);
         System.out.println("Current distance:" + curentDistance);
+
+        Mechanic mechanic = new Mechanic();
+        mechanic. repair(carReference);
+
+        System.out.println("Is care damaged?" + carReference. damaged);
 
 
         System.out.println("Engine details :");
