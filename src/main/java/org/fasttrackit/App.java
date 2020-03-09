@@ -55,6 +55,11 @@ public class App {
         System.out.println( "color: " + car2. color);
         System.out.println("damaged: " + car2. damaged);
 
+        //modulo (modulus) operator
+        System.out.println(4 % 2);
+        System.out.println(4 % 2 == 0);
+        System.out.println( 4 % 3);
+
 ;    }
 
 }
