@@ -1,10 +1,18 @@
 package org.fasttrackit;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  */
 public class App {
     public static void main(String[] args) {
+        System.out.println("Please enter vehicle name");
+        Scanner scanner = new Scanner(System.in);
+        String vehicleName = scanner.nextLine();
+        System.out.println("Entered name:" + vehicleName);
+
+
         System.out.println("Welcome tu the racing game");
 
         Car carReference = new Car();
