@@ -12,6 +12,7 @@ public class App {
         carReference.color = "red";
         carReference.maxSpeed = 260;
         carReference.mileage = 6.2;
+        carReference. fuelLevel = 100;
 
 //        carReference.engine = newEngine();
 //        carReference.engine.manufactured = "vw";
@@ -23,6 +24,10 @@ public class App {
 
       carReference. engine = engine1;
       // one objesct with two references
+
+        double curentDistance = carReference.accelerate(60, 1);
+        System.out.println("Current distance:" + curentDistance);
+
 
         System.out.println("Engine details :");
         System.out.println( engine1.capacity);
