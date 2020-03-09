@@ -13,6 +13,22 @@ public class Vehicle  {
     boolean damaged;
 
     public double accelerate (double speed, double durationInHours ){
+        if (fuelLevel <= 0){
+            System.out.println("Not enough fuel");
+            return 0;
+        }
+
+        if (speed > maxSpeed){
+            System.out.println( "Max speed exceeder!");
+            return 0;
+        }else  if (speed == maxSpeed){
+            System.out.println( "Be careful! Max speed reacched!");
+
+        }else {
+            System.out.println("Valid speed entered");
+
+        }
+        //todo: use more fuel if speed > 120
 
         System.out.println( name + "is accelerating with " + speed + "km/h" + durationInHours + "h");
 
